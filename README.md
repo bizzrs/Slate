@@ -1,14 +1,10 @@
-<br>
-<div align="center">
-    <img alt="app-virtual-wallet" src=".github/capa.png" width="95%">
-</div>
-<br>
+
 
 ## 💻 Project
 
 Backend for SlateFX
 
-## 🚀 Tecnologias
+## 🚀 Tech Stack
 
 - Ruby 3.2.0
 - Rails 7.0.4
@@ -23,13 +19,13 @@ Backend for SlateFX
 - Gem: Active model serializers
 
 
-## 💥 Funcionalidades
+## 💥 Functionality
 
 **WEB**
 - [x] Login - Admin
-- [x] CRUD de Usuários
-- [x] Creditar ou debitar dinheiro na carteira do usuário
-- [x] Histórico de transações realizadas ordenadas por data e hora
+- [x] CRUD for USER
+- [x] Credit or Debit user account
+- [x] Transaction Histor
 
 **API**
 - [x] GET: List user
@@ -41,7 +37,7 @@ Backend for SlateFX
 ## ⚡ Install
 
 ```bash
-# clonar o projeto
+
 git clone git@github.com:GeorgePires/virtual-wallet.git
 
 # entre no diretório clonado
