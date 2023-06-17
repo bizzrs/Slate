@@ -1,0 +1,32 @@
+<div id="<%= dom_id user %>">
+  <p class="my-5">
+    <strong class="inline text-slate-700">Wallet code:</strong>
+    <strong>#<%= user.try(:wallet).try(:wallet_number) %></strong>
+  </p>
+
+  <p class="my-5">
+    <strong class="inline text-slate-700">Name:</strong>
+    <%= user.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="inline text-slate-700">Email:</strong>
+    <%= user.email %>
+  </p>
+
+  <p class="my-5">
+    <strong class="inline text-slate-700">Created:</strong>
+    <%= user.created_at.strftime("%a, %d %B %Y at %T") %>
+  </p>
+
+
+   <p class="my-5">
+    <strong class="inline text-slate-700">Balance available:</strong>
+    <%= number_to_currency(user.try(:wallet).try(:balance), unit: "R$ ", separator: ".", delimiter: ",") %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= render  "shared/links" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
